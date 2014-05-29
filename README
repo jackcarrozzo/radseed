@@ -17,9 +17,9 @@ For compatibility, the following filesystem stubs are presented:
 - Event trigger for testing: 
 		/sys/kernel/radseed/trigger
 
-Your geiger counter should present a TTL-compatible strobe to pin 10 (ACK) of
-the parallel port at each event. However, the trigger can be used to test functionality
-of monitoring scripts and so forth:
+Your geiger counter should present a TTL-compatible strobe to pin 10 (ACK) 
+of the parallel port at each event. However, the trigger can be used to 
+test functionality of monitoring scripts and so forth:
 
 root@kdev0 ~ # cat /sys/kernel/radseed/events 
 0
@@ -36,7 +36,7 @@ root@kdev0 ~ # cat /sys/kernel/radseed/events
 root@kdev0 ~ # cat /sys/kernel/radseed/last 
 16316569
 
-The is tested to work with the 3.10.x and 3.13.x vanilla trees. The code is by no means
-robust or complete, but simply an experiement to see if this is worthwhile. I am to finish 
-a USB interface to my geiger counters and implement that, as well. If you find this useful,
-let me know!
+The is tested to work with the 3.10.x and 3.13.x vanilla trees. The code is 
+by no means robust or complete, but simply an experiement to see if this is 
+worthwhile. I aim to finish a USB interface to my geiger counters and 
+implement that here as well. If you find this useful, let me know!
