@@ -36,7 +36,7 @@ root@kdev0 ~ # cat /sys/kernel/radseed/events
 root@kdev0 ~ # cat /sys/kernel/radseed/last 
 16316569
 
-The is tested to work with the 3.10.x and 3.13.x vanilla trees. The code is 
+This is tested to work with the 3.10.x and 3.13.x vanilla trees. The code is 
 by no means robust or complete, but simply an experiement to see if this is 
 worthwhile. I aim to finish a USB interface to my geiger counters and 
 implement that here as well. If you find this useful, let me know!
