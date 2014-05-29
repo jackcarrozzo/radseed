@@ -1,3 +1,5 @@
+/* vim: ts=2 sw=2 */
+
 #include <linux/module.h>
 #include <linux/moduleparam.h>
 #include <linux/init.h>
@@ -19,13 +21,13 @@
 #include <asm/signal.h>
 #include "radseed.h"
 
-#define DEVNAME 							"radseed" 	// name in /proc/devices, modules
-#define PROC_EVENTS_NAME 			"radevents" // /proc/radevents
-#define PROC_EVENTTIME_NAME 	"radlast"		// /proc/radlast
-#define SYSFS_GROUP_NAME 			"radseed"		// /sys/kernel/radseed/
-#define SYSFS_EVENTS_NAME 		events			// /sys/kernel/radseed/events
-#define SYSFS_EVENTTIME_NAME 	last				// /sys/kernel/radseed/last
-#define SYSFS_TRIGGER_NAME 		trigger			// /sys/kernel/radseed/trigger
+#define DEVNAME								"radseed"		// name in /proc/devices, modules
+#define PROC_EVENTS_NAME			"radevents" // /proc/radevents
+#define PROC_EVENTTIME_NAME		"radlast"		// /proc/radlast
+#define SYSFS_GROUP_NAME			"radseed"		// /sys/kernel/radseed/
+#define SYSFS_EVENTS_NAME			events			// /sys/kernel/radseed/events
+#define SYSFS_EVENTTIME_NAME	last				// /sys/kernel/radseed/last
+#define SYSFS_TRIGGER_NAME		trigger			// /sys/kernel/radseed/trigger
 
 // PPT1 but allow addr to be passed as a param
 // defaults:   addr   irq
