@@ -1,3 +1,5 @@
+# this makefile uses the newish module build system, hence the oddness.
+
 ifneq ($(KERNELRELEASE),)
 	obj-m := radseed.o
 

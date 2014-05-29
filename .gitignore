@@ -1,0 +1,7 @@
+*.ko
+*.mod.c
+*.o
+modules.order
+Module.symvers
+.radseed*
+.tmp_versions
